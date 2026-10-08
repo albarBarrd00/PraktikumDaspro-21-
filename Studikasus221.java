@@ -32,6 +32,31 @@ public class Studikasus221 {
             System.out.print("Status pendanaan PKM: ");
             statusPKM = sc.nextInt();
         
-        
-    }
-}
+            if ( jumlahDokumen < 4) {
+                int dokKurang = 4 - jumlahDokumen;
+                System.out.println("dokumen tidak lengkap (kurang"+ dokKurang+" dokumen) dana tidak diberikan")         
+            }
+            if (jenisKegiatan.equalsIgnoreCase("belmawa") ||
+                jenisKegiatan.equalsIgnoreCase("bakorma") ||
+                jenisKegiatan.equalsIgnoreCase(jenisKegiatan)) {
+                    if ( peringkatJuara >= 1 && peringkatJuara <= 3)
+                    System.out.println("Mendapat dana penghargaan");
+                }else {
+                System.out.println("Tidak mendapat dana ");
+                }
+            
+           
+             else if (jenisKegiatan.equalsIgnoreCase("pkm")) 
+                if (statusPKM == 1)
+                    System.out.println("Tim lolos dana penghargaan diberikan");
+                } else {
+                    System.out.println("Tim tidak lolos pendanaan, dana penghargaan tidak diberikan");
+                }
+            else {
+                System.out.println("Kegiatan ini tidak memeperoleh dana penghargaan");
+            }
+
+        }
+
+        sc.close();
+    
